@@ -48,7 +48,7 @@ const SendInput = ({ setMessages, setIsLoading }) => {
           ref={inputRef}
           className="form-control me-2"
           type="text"
-          placeholder="Any question ?"
+          placeholder="Type hier je vraag"
         />
         <button type="submit" className="send-btn">
           Send

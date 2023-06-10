@@ -33,7 +33,7 @@ const ChatBox = () => {
           }}
         >
           {messagesList}
-          {isLoading ? (
+          {!isLoading ? (
             <div className="loading d-flex align-items-center ">
               <span></span>
               <span className="mx-2"></span>

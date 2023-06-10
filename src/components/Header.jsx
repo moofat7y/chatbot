@@ -7,9 +7,7 @@ const Header = () => {
       className="shadow-sm"
     >
       <div className="container px-5">
-        <div className="brand fs-4">
-          <span className="text-primary fw-bold">A</span>sk Anything
-        </div>
+        <div className="brand fs-4">Zoeken op de website</div>
       </div>
     </header>
   );
