@@ -26,7 +26,8 @@ const ChatBox = () => {
         <div
           className="chat-window pt-2 pb-1"
           style={{
-            height: "83vh",
+            height: "auto",
+            maxHeight: "83vh",
             display: "flex",
             flexDirection: "column",
             overflowY: "auto",
