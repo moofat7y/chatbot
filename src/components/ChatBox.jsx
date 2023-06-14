@@ -11,9 +11,8 @@ const ChatBox = () => {
         key={index}
         ref={scroll}
         className={`message ${message.sender ? "sender" : ""}`}
-      >
-        {message.text}
-      </div>
+        dangerouslySetInnerHTML={{ __html: message.text }}
+      ></div>
     );
   });
 

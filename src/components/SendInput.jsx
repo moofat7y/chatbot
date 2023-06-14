@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useRef, useState } from "react";
+import urlify from "../utils/urlify";
 
 const SendInput = ({ setMessages, setIsLoading }) => {
   const inputRef = useRef();
@@ -24,11 +25,8 @@ const SendInput = ({ setMessages, setIsLoading }) => {
           }
         );
         setIsLoading(false);
-        console.log(response.data.response);
-        setMessages((prev) => [
-          ...prev,
-          { sender: false, text: response.data.response },
-        ]);
+        const newText = urlify(response.data.response);
+        setMessages((prev) => [...prev, { sender: false, text: newText }]);
       } catch (error) {
         setIsLoading(false);
         console.log(error);
